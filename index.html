@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fafafa">
+  <meta name="description" content="DyadLink: interaction and dance results across motion generation, retargeting, control, and sim-to-real.">
+  <meta property="og:title" content="DyadLink | An Interaction Is More Than Two">
+  <meta property="og:description" content="Shared relations. From generated motion to physical interaction.">
+  <meta property="og:type" content="website">
+  <title>DyadLink | An Interaction Is More Than Two</title>
+  <link rel="icon" type="image/webp" href="assets/images/handshake.webp">
+  <link rel="stylesheet" href="assets/site.css">
+  <script defer src="assets/vendor/lucide.min.js"></script>
+  <script defer src="site.config.js"></script>
+  <script defer src="data/media.js"></script>
+  <script defer src="assets/site.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to results</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#top" aria-label="DyadLink home">Dyad<span>Link</span><span class="brand-mark" aria-hidden="true"></span></a>
+      <button class="icon-button mobile-menu" id="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" aria-label="Open navigation"><i data-lucide="menu"></i></button>
+      <nav id="navigation" aria-label="Results navigation">
+        <a href="#generation">Generation</a><a href="#retargeting">Retargeting</a><a href="#control">Control</a><a href="#sim-to-real">Sim-to-Real</a>
+      </nav>
+      <button class="quiet-button pause-all" id="pause-all" type="button"><i data-lucide="pause"></i><span>Pause videos</span></button>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero container" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Motion generation &amp; humanoid interaction</p>
+        <h1 id="hero-title">Dyad<span>Link</span></h1>
+        <h2 id="paper-heading">An Interaction Is More Than Two</h2>
+        <p class="hero-subtitle" id="paper-subtitle">Unifying motion generation and policy control for dyadic humanoid interaction</p>
+        <div id="authors" class="authors" hidden></div>
+        <div class="resource-links" id="resources"><a class="resource resource-primary" href="#generation">Explore videos</a></div>
+      </div>
+      <div class="feature-film">
+        <div id="teaser-player"></div>
+        <div class="feature-caption"><span id="teaser-title">DyadLink · Project video</span><span id="teaser-note">4 min 36 sec</span></div>
+      </div>
+      <p class="hero-takeaway">One shared relational graph.<br class="mobile-only"> From generated motion to physical interaction.</p>
+      <p class="library-summary" id="library-summary"></p>
+      <div class="stage-index" aria-label="Four result stages">
+        <a href="#generation"><span>01</span> Generation <span class="stage-total" data-total="generation"></span><i data-lucide="arrow-up-right"></i></a>
+        <a href="#retargeting"><span>02</span> Retargeting <span class="stage-total" data-total="retargeting"></span><i data-lucide="arrow-up-right"></i></a>
+        <a href="#control"><span>03</span> Control <span class="stage-total" data-total="control"></span><i data-lucide="arrow-up-right"></i></a>
+        <a href="#sim-to-real"><span>04</span> Sim-to-Real <span class="stage-total" data-total="sim-to-real"></span><i data-lucide="arrow-up-right"></i></a>
+      </div>
+    </section>
+
+    <section class="result-section" id="generation" data-stage="generation" aria-labelledby="generation-heading">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">01 / Human motion</p><h2 id="generation-heading">Generation</h2></div>
+          <span class="section-tag">Motion sequences</span>
+        </div>
+        <div class="gallery-toolbar">
+          <div class="category-tabs" role="group" aria-label="Generation motion type"><button type="button" data-category="Interact" aria-pressed="true">Interact</button><button type="button" data-category="Dance" aria-pressed="false">Dance</button></div>
+          <div class="gallery-actions"><span class="clip-count" id="generation-count" aria-live="polite"></span><button class="quiet-button play-section" type="button" data-target="generation"><i data-lucide="play"></i><span>Play all</span></button></div>
+        </div>
+        <p class="category-context" id="generation-context"></p>
+        <div class="video-grid" id="generation-gallery"></div>
+        <details class="technical-note" id="generation-details"><summary>About these clips <i data-lucide="plus"></i></summary><p id="generation-provenance"></p></details>
+      </div>
+    </section>
+
+    <section class="result-section section-soft" id="retargeting" data-stage="retargeting" aria-labelledby="retargeting-heading">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">02 / Robot motion</p><h2 id="retargeting-heading">Retargeting</h2></div><span class="section-tag">Kinematic replay</span></div>
+        <div class="gallery-toolbar">
+          <div class="category-tabs" role="group" aria-label="Retargeting motion type"><button type="button" data-category="Interact" aria-pressed="true">Interact</button><button type="button" data-category="Dance" aria-pressed="false">Dance</button></div>
+          <div class="retarget-browser"><button class="icon-button" id="retarget-prev" type="button" aria-label="Previous sequence"><i data-lucide="chevron-left"></i></button><label class="select-label" for="retarget-action">Sequence <select id="retarget-action"></select></label><button class="icon-button" id="retarget-next" type="button" aria-label="Next sequence"><i data-lucide="chevron-right"></i></button></div>
+        </div>
+        <div class="comparison-toolbar">
+          <div><p id="retarget-meta" class="category-context"></p><span class="clip-count" id="retarget-count" aria-live="polite"></span></div>
+          <div class="pair-controls">
+            <button class="quiet-button" id="pair-play" type="button"><i data-lucide="play"></i><span>Play both</span></button>
+            <button class="icon-button" id="pair-restart" type="button" aria-label="Restart both retargeting videos" title="Restart both"><i data-lucide="rotate-ccw"></i></button>
+            <label class="speed-label" for="pair-speed"><span>Speed</span><select id="pair-speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+          </div>
+        </div>
+        <div class="video-grid comparison-grid" id="retarget-pair"></div>
+        <p class="gallery-footnote" id="retarget-provenance"></p>
+      </div>
+    </section>
+
+    <section class="result-section" id="control" data-stage="control" aria-labelledby="control-heading">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">03 / Physics simulation</p><h2 id="control-heading">Control</h2></div><span class="section-tag">Policy rollouts</span></div>
+        <div class="gallery-toolbar">
+          <div class="category-tabs" role="group" aria-label="Control motion type"><button type="button" data-category="Interact" aria-pressed="true">Interact</button><button type="button" data-category="Dance" aria-pressed="false">Dance</button></div>
+          <div class="gallery-actions"><span class="clip-count" id="control-count" aria-live="polite"></span><button class="quiet-button play-section" type="button" data-target="control"><i data-lucide="play"></i><span>Play all</span></button></div>
+        </div>
+        <p class="category-context" id="control-context"></p>
+        <div class="video-grid" id="control-gallery"></div>
+      </div>
+    </section>
+
+    <section class="result-section section-soft" id="sim-to-real" data-stage="sim-to-real" aria-labelledby="real-heading">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">04 / Physical deployment</p><h2 id="real-heading">Sim-to-Real</h2><p class="section-summary" id="hardware-coming-soon">More real-world robot demonstrations coming soon.</p></div><span class="section-tag">Camera recordings</span></div>
+        <div class="gallery-toolbar">
+          <div class="gallery-actions"><span class="clip-count" id="sim-to-real-count" aria-live="polite"></span><button class="quiet-button play-section" type="button" data-target="sim-to-real"><i data-lucide="play"></i><span>Play all</span></button></div>
+        </div>
+        <p class="category-context" id="sim-to-real-context"></p>
+        <div class="video-grid" id="sim-to-real-gallery"></div>
+      </div>
+    </section>
+    <section class="citation-section container" id="citation" hidden><div class="citation-heading"><h2>BibTeX</h2><button class="quiet-button" id="copy-citation" type="button"><i data-lucide="copy"></i><span>Copy citation</span></button></div><pre><code id="bibtex"></code></pre></section>
+  </main>
+  <footer class="container"><a class="brand" href="#top">Dyad<span>Link</span></a><p>Shared relations. Coordinated motion.</p><a class="back-top" href="#top">Back to top <i data-lucide="arrow-up-right"></i></a></footer>
+  <dialog id="media-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><div><h2 id="dialog-title"></h2><p id="dialog-meta"></p></div><button class="icon-button" id="dialog-close" type="button" aria-label="Close video"><i data-lucide="x"></i></button></div><video id="dialog-video" controls playsinline loop preload="none"></video></dialog>
+  <div id="notice" class="notice" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript-message">Enable JavaScript to browse the video galleries. Local videos are in assets/videos.</p></noscript>
+</body>
+</html>

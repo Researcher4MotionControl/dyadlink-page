@@ -1,0 +1,118 @@
+DyadLink — video text descriptions
+
+Source notes distinguish model predictions, synthetic variants and GT-assisted hybrids.
+
+interact_InterHuman_single_handshake.mp4
+Generated follower
+Leader-conditioned follower prediction, shown as fitted SMPL meshes. A qualitative single-seed example, not a benchmark result.
+Text condition: In this interaction, Person A takes the Leader role and sets the action, while Person B takes the Follower role and adapts to the Leader. the two greet each other by extending their right hands for a handshake and nodding their heads.
+
+interact_InterHuman_single_handshake_synthetic_mild.mp4
+Synthetic variant
+A small synthetic perturbation of recorded dataset motion, included as a presentation variant; not a model prediction. The text is a source annotation.
+Source annotation: both they stretch out their right hands for a handshake and nod in agreement.
+
+interact_InterHuman_basketball_pass.mp4
+Generated follower
+Leader-conditioned follower prediction, shown as fitted SMPL meshes. A qualitative single-seed example, not a benchmark result.
+Text condition: In this interaction, Person A takes the Leader role and sets the action, while Person B takes the Follower role and adapts to the Leader. one tosses the basketball to the other, and the other receives the basketball.
+
+interact_InterHuman_fencing.mp4
+Generated follower
+Leader-conditioned follower prediction, shown as fitted SMPL meshes. A qualitative single-seed example, not a benchmark result.
+Text condition: Person B is the Leader and initiates the interaction; Person A is the Follower and responds to the Leader's movement, position, and facing direction. Person A advances and attempts to thrust with the sword in the right hand, while the second parries the sword with a swinging motion.
+
+interact_InterHuman_fist_bump_counterpunch.mp4
+Generated follower
+Leader-conditioned follower prediction, shown as fitted SMPL meshes. A qualitative single-seed example, not a benchmark result.
+Text condition: Person A, acting as the Leader, determines the timing and spatial cue; Person B, acting as the Follower, reacts while preserving the intended interpersonal relation. the two exchange fist bumps with their left hand, and then one person counters with a punch from the right fist.
+
+interact_InterHuman_mutual_salute.mp4
+Generated follower
+Leader-conditioned follower prediction, shown as fitted SMPL meshes. A qualitative single-seed example, not a benchmark result.
+Text condition: Person A is the Leader and initiates the interaction; Person B is the Follower and responds to the Leader's movement, position, and facing direction. two people exchange salutes.
+
+interact_InterHuman_rock_paper_scissors.mp4
+Generated follower
+Leader-conditioned follower prediction, shown as fitted SMPL meshes. A qualitative single-seed example, not a benchmark result.
+Text condition: In this interaction, Person A takes the Leader role and sets the action, while Person B takes the Follower role and adapts to the Leader. the two guys play rock paper scissors game. one of them chooses rock and the other chooses paper.
+
+interact_InterHuman_straight_punch_block.mp4
+Generated follower
+Leader-conditioned follower prediction, shown as fitted SMPL meshes. A qualitative single-seed example, not a benchmark result.
+Text condition: Person A is the Leader and initiates the interaction; Person B is the Follower and responds to the Leader's movement, position, and facing direction. Person A punches straight at the second, while the second blocks with a bent arm.
+
+interact_InterHuman_high_five_approach_synthetic_mild.mp4
+Synthetic variant
+A small synthetic perturbation of recorded dataset motion, included as a presentation variant; not a model prediction. The text is a source annotation.
+Source annotation: one person extends their right hand and sprints towards the other person. the other person then extends their right hand as well.
+
+interact_InterHuman_document_salute_synthetic_mild.mp4
+Synthetic variant
+A small synthetic perturbation of recorded dataset motion, included as a presentation variant; not a model prediction. The text is a source annotation.
+Source annotation: one reads the document while the other gives a salute.
+
+interact_InterHuman_guided_dance_gt_upper_comf_lower.mp4
+GT-assisted hybrid
+GT upper-body motion, world root and shape combined with generated local leg rotations; not a pure model output. The text describes the source used for the generated component.
+Generated-component text: Person A, acting as the Leader, determines the timing and spatial cue; Person B, acting as the Follower, reacts while preserving the intended interpersonal relation. Person A spins around, while leading and coordinating the second's dance moves through their joined hands.
+
+interact_InterHuman_high_five_jump_synthetic_mild.mp4
+Synthetic variant
+A small synthetic perturbation of recorded dataset motion, included as a presentation variant; not a model prediction. The text is a source annotation.
+Source annotation: these two people celebrate by leaping and clapping with their right hands.
+
+interact_InterHuman_photo_gesture_synthetic_mild.mp4
+Synthetic variant
+A small synthetic perturbation of recorded dataset motion, included as a presentation variant; not a model prediction. The text is a source annotation.
+Source annotation: the two imitate "scissors" gesture, and then the first one extends the right hand to take a group photo.
+
+interact_InterHuman_shoulder_pat_synthetic_mild.mp4
+Synthetic variant
+A small synthetic perturbation of recorded dataset motion, included as a presentation variant; not a model prediction. The text is a source annotation.
+Source annotation: one person raised the right hand and gave a pat on the other person's shoulder.
+
+interact_InterHuman_two_hand_handoff_synthetic_mild.mp4
+Synthetic variant
+A small synthetic perturbation of recorded dataset motion, included as a presentation variant; not a model prediction. The text is a source annotation.
+Source annotation: one gives something to the other using both hands. the other accepts the object with both hands.
+
+interact_InterHuman_upward_punch_block_synthetic_mild.mp4
+Synthetic variant
+A small synthetic perturbation of recorded dataset motion, included as a presentation variant; not a model prediction. The text is a source annotation.
+Source annotation: the first person unleashes a straight upward punch as the second lifts her arm above the head in defense.
+
+interact_InterHuman_wave_greeting_synthetic_mild.mp4
+Synthetic variant
+A small synthetic perturbation of recorded dataset motion, included as a presentation variant; not a model prediction. The text is a source annotation.
+Source annotation: both people approach and wave to each other directly.
+
+dance_CoDance_compas_pair4_song3_take2_comf_upper_gt_lower.mp4
+GT-assisted hybrid
+Generated upper-body motion and world root combined with GT lower-body rotations; not a pure model output. The text conditions the generated component.
+Generated-component text: During this partnered dance, Person A takes the Leader role and shapes the phrase, while Person B takes the Follower role and adapts to the Leader's motion and musical timing. The leader initiates turns and weight shifts, and the follower mirrors the timing through a flamenco partner dance duet with close partner spacing.
+
+dance_CoDance_compas_pair4_song4_take2_comf_upper_gt_lower.mp4
+GT-assisted hybrid
+Generated upper-body motion and world root combined with GT lower-body rotations; not a pure model output. The text conditions the generated component.
+Generated-component text: Person A is the Leader, guiding the duet's timing, direction, and partner spacing; Person B is the Follower and responds to the Leader while moving with the music. Two partners maintain an interactive dance connection as they step, turn, and adjust distance. Their movement is moderately synchronized with a slow rhythmic quality.
+
+dance_CoDance_compas_pair8_song2_take1_comf_upper_gt_lower.mp4
+GT-assisted hybrid
+Generated upper-body motion and world root combined with GT lower-body rotations; not a pure model output. The text conditions the generated component.
+Generated-component text: Person A is the Leader, guiding the duet's timing, direction, and partner spacing; Person B is the Follower and responds to the Leader while moving with the music. The follower tracks the leader's body direction and timing across repeated dance phrases, creating a connected duet rather than two separate solos.
+
+dance_CoDance_paso_doble_010_005_comf_upper_gt_lower.mp4
+GT-assisted hybrid
+Generated upper-body motion and world root combined with GT lower-body rotations; not a pure model output. The text conditions the generated component.
+Generated-component text: During this partnered dance, Person B takes the Leader role and shapes the phrase, while Person A takes the Follower role and adapts to the Leader's motion and musical timing. The follower tracks the leader's body direction and timing across repeated dance phrases, creating a connected duet rather than two separate solos.
+
+dance_CoDance_lumba_002_003_comf_upper_gt_lower.mp4
+GT-assisted hybrid
+Generated upper-body motion and world root combined with GT lower-body rotations; not a pure model output. The text conditions the generated component.
+Generated-component text: Person A is the Leader, guiding the duet's timing, direction, and partner spacing; Person B is the Follower and responds to the Leader while moving with the music. The leader initiates turns and weight shifts, and the follower mirrors the timing through a street dance duet with close partner spacing.
+
+dance_CoDance_lumba_008_001_comf_upper_gt_lower.mp4
+GT-assisted hybrid
+Generated upper-body motion and world root combined with GT lower-body rotations; not a pure model output. The text conditions the generated component.
+Generated-component text: Person A, acting as the Leader, sets the movement pathway and rhythm; Person B, acting as the Follower, reacts to those cues and maintains the intended partner relationship. The leader sets the rhythm and the follower reacts with coordinated steps, smooth transitions, and clear partner spacing in the street dance passage.
