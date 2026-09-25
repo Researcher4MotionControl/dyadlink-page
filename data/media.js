@@ -1623,6 +1623,27 @@ window.DYADLINK_MEDIA = {
       "height": 1080
     },
     {
+      "id": "control-interact_InterHuman_fist_bump_counterpunch",
+      "title": "Fist bump & counterpunch",
+      "category": "Interact",
+      "dataset": "InterHuman",
+      "sample": "1854",
+      "action": "fist_bump_counterpunch",
+      "variant": "",
+      "kind": "Policy rollout",
+      "sourceKind": "policy_video",
+      "description": "",
+      "condition": "",
+      "promptLabel": "Text condition",
+      "provenance": "Learned-policy execution in physics simulation.",
+      "src": "assets/videos/control/interact_InterHuman_fist_bump_counterpunch.mp4",
+      "poster": "assets/videos/control/interact_InterHuman_fist_bump_counterpunch.webp",
+      "duration": 15.55,
+      "hasAudio": false,
+      "width": 1920,
+      "height": 1080
+    },
+    {
       "id": "control-interact_InterHuman_guided_dance_10s",
       "title": "Guided dance · 10 s",
       "category": "Interact",
@@ -1789,6 +1810,48 @@ window.DYADLINK_MEDIA = {
       "hasAudio": false,
       "width": 1920,
       "height": 1080
+    },
+    {
+      "id": "control-dance_CoDance_compas_pair4_song3_take2",
+      "title": "Compas · Pair 4 / Song 3 / Take 2",
+      "category": "Dance",
+      "dataset": "CoDance",
+      "sample": "compas3d_Pair4_song3_take2_person1_leads_person2",
+      "action": "compas_pair4_song3_take2",
+      "variant": "",
+      "kind": "Policy rollout",
+      "sourceKind": "policy_video",
+      "description": "",
+      "condition": "",
+      "promptLabel": "Text condition",
+      "provenance": "Learned-policy execution in physics simulation.",
+      "src": "assets/videos/control/dance_CoDance_compas_pair4_song3_take2.mp4",
+      "poster": "assets/videos/control/dance_CoDance_compas_pair4_song3_take2.webp",
+      "duration": 14.983,
+      "hasAudio": false,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "control-dance_CoDance_compas_pair4_song4_take2",
+      "title": "Compas · Pair 4 / Song 4 / Take 2",
+      "category": "Dance",
+      "dataset": "CoDance",
+      "sample": "compas3d_Pair4_song4_take2_person1_leads_person2",
+      "action": "compas_pair4_song4_take2",
+      "variant": "",
+      "kind": "Policy rollout",
+      "sourceKind": "policy_video",
+      "description": "",
+      "condition": "",
+      "promptLabel": "Text condition",
+      "provenance": "Learned-policy execution in physics simulation.",
+      "src": "assets/videos/control/dance_CoDance_compas_pair4_song4_take2.mp4",
+      "poster": "assets/videos/control/dance_CoDance_compas_pair4_song4_take2.webp",
+      "duration": 14.983,
+      "hasAudio": false,
+      "width": 1920,
+      "height": 1080
     }
   ],
   "hardware": [
@@ -1836,11 +1899,11 @@ window.DYADLINK_MEDIA = {
     }
   ],
   "summary": {
-    "videos": 75,
+    "videos": 78,
     "generation": 23,
     "retargeting": 40,
     "retargetingSequences": 23,
-    "control": 10,
+    "control": 13,
     "hardware": 2
   }
 };
