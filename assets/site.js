@@ -70,6 +70,7 @@
     }
   }
   function pauseAll() {
+    document.dispatchEvent(new CustomEvent("dyadlink:pause-all"));
     stopPair();
     $$("video").forEach((video) => video.pause());
   }
@@ -391,8 +392,9 @@
     control: stageData.control.length,
     "sim-to-real": stageData["sim-to-real"].length,
   };
-  const total = Object.values(totals).reduce((sum, count) => sum + count, 0);
-  $("#library-summary").append(node("span", "", total + " videos"), node("span", "", "InterHuman + CoDance"), node("span", "", "Four stages"));
+  const comparisonCount = window.DYADLINK_PIPELINE_COMPARISON?.clips?.length || 0;
+  const total = Object.values(totals).reduce((sum, count) => sum + count, 0) + comparisonCount * 2;
+  $("#library-summary").append(node("span", "", total + " result videos"), node("span", "", "InterHuman + CoDance"), node("span", "", comparisonCount ? comparisonCount + " pipeline comparisons · Four stages" : "Four stages"));
   $$("[data-total]").forEach((element) => {
     element.textContent = String(totals[element.dataset.total]);
     element.setAttribute("aria-label", totals[element.dataset.total] + " videos");

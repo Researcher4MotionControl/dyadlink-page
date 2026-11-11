@@ -14,7 +14,9 @@
   <script defer src="assets/vendor/lucide.min.js"></script>
   <script defer src="site.config.js"></script>
   <script defer src="data/media.js"></script>
+  <script defer src="data/pipeline-comparison.js"></script>
   <script defer src="assets/site.js"></script>
+  <script defer src="assets/pipeline-comparison.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to results</a>
@@ -23,7 +25,7 @@
       <a class="brand" href="#top" aria-label="DyadLink home">Dyad<span>Link</span><span class="brand-mark" aria-hidden="true"></span></a>
       <button class="icon-button mobile-menu" id="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" aria-label="Open navigation"><i data-lucide="menu"></i></button>
       <nav id="navigation" aria-label="Results navigation">
-        <a href="#generation">Generation</a><a href="#retargeting">Retargeting</a><a href="#control">Control</a><a href="#sim-to-real">Sim-to-Real</a>
+        <a href="#pipeline-comparison">Pipeline comparison</a><a href="#generation">Generation</a><a href="#retargeting">Retargeting</a><a href="#control">Control</a><a href="#sim-to-real">Sim-to-Real</a>
       </nav>
       <button class="quiet-button pause-all" id="pause-all" type="button"><i data-lucide="pause"></i><span>Pause videos</span></button>
     </div>
@@ -49,6 +51,30 @@
         <a href="#retargeting"><span>02</span> Retargeting <span class="stage-total" data-total="retargeting"></span><i data-lucide="arrow-up-right"></i></a>
         <a href="#control"><span>03</span> Control <span class="stage-total" data-total="control"></span><i data-lucide="arrow-up-right"></i></a>
         <a href="#sim-to-real"><span>04</span> Sim-to-Real <span class="stage-total" data-total="sim-to-real"></span><i data-lucide="arrow-up-right"></i></a>
+      </div>
+    </section>
+
+    <section class="result-section section-soft" id="pipeline-comparison" data-stage="pipeline-comparison" aria-labelledby="pipeline-heading">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">From generation to execution</p><h2 id="pipeline-heading">Whole Pipeline Comparison</h2></div>
+          <span class="section-tag">Paired playback</span>
+        </div>
+        <div class="pipeline-tabs-wrap"><div class="category-tabs pipeline-tabs" id="pipeline-tabs" role="tablist" aria-label="Pipeline comparison action type"></div></div>
+        <div class="pipeline-control-bar">
+          <div class="pipeline-action-info"><h3 id="pipeline-action-title"></h3><p id="pipeline-status" role="status" aria-live="polite">Choose an action and play both videos.</p></div>
+          <div class="pipeline-controls">
+            <button class="quiet-button" id="pipeline-play" type="button" aria-pressed="false" aria-label="Play both pipeline comparison videos"><i class="pipeline-play-icon" data-lucide="play"></i><i class="pipeline-pause-icon" data-lucide="pause"></i><span>Play both</span></button>
+            <button class="icon-button" id="pipeline-restart" type="button" aria-label="Restart both pipeline comparison videos" title="Restart both"><i data-lucide="rotate-ccw"></i></button>
+            <label class="speed-label" for="pipeline-speed"><span>Speed</span><select id="pipeline-speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+            <label class="pipeline-loop-label" for="pipeline-loop"><input id="pipeline-loop" type="checkbox" checked> Loop</label>
+          </div>
+        </div>
+        <div id="pipeline-panel" role="tabpanel" tabindex="0" aria-label="Selected action comparison"><div class="pipeline-pair" id="pipeline-pair"></div></div>
+        <div class="pipeline-timeline">
+          <label for="pipeline-seek">Motion time</label><input id="pipeline-seek" type="range" min="0" max="1000" step="1" value="0" aria-label="Seek both pipeline comparison videos"><output id="pipeline-time" for="pipeline-seek">0:00 / 0:00</output>
+        </div>
+        <p class="gallery-footnote">Others combines InterAgent and OmniRetarget; BeyondMimic policy execution is pending. Its Control panel displays the training status.</p>
       </div>
     </section>
 
