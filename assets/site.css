@@ -84,6 +84,7 @@ select{border:1px solid #d4dde4;background:white;border-radius:6px;height:38px;p
 .comparison-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.comparison-grid .video-frame,.comparison-grid .video-placeholder{aspect-ratio:3/2}.comparison-grid.is-single{grid-template-columns:minmax(0,1fr);max-width:860px;margin-inline:auto}.comparison-grid.is-single .video-frame{aspect-ratio:25/16}
 .comparison-grid .video-caption h3{font-size:16px}.comparison-grid .video-caption p{font-size:11px}
 .gallery-footnote{font-size:11px;color:#7b8790;margin-top:23px;max-width:900px;line-height:1.7}
+.pipeline-intro{margin:-8px 0 24px;max-width:1000px;color:var(--muted);font-size:14px;line-height:1.7}
 .pipeline-tabs-wrap{max-width:100%;overflow-x:auto;padding:1px 1px 9px;margin-bottom:13px;scrollbar-width:thin}
 .pipeline-tabs{display:flex;width:max-content;max-width:none;background:#e9edf0}
 .pipeline-tabs button{min-width:0;white-space:nowrap;padding:9px 17px}
