@@ -12,8 +12,8 @@ window.DYADLINK_PIPELINE_COMPARISON = {
       "others": {
         "src": "assets/videos/pipeline/others/IH336_handshake.mp4",
         "poster": "assets/videos/pipeline/others/IH336_handshake.webp",
-        "duration": 3.566667,
-        "controlPending": true
+        "duration": 3.533333,
+        "controlPending": false
       }
     },
     {
@@ -97,5 +97,5 @@ window.DYADLINK_PIPELINE_COMPARISON = {
       }
     }
   ],
-  "note": "Others combines InterAgent and OmniRetarget; BeyondMimic control results are pending."
+  "note": "Others uses InterAgent + OmniRetarget + BeyondMimic. BeyondMimic control is available for Handshake; the other five clips retain training-status placeholders."
 };
